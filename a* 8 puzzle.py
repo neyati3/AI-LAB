@@ -17,10 +17,10 @@ def get_neighbors(state):
     zero_index = state.index(0)
     row, col = divmod(zero_index, 3)
     moves = [
-        (-1, 0),  # Up
-        (1, 0),   # Down
-        (0, -1),  # Left
-        (0, 1)    # Right
+        (-1, 0),  
+        (1, 0),   
+        (0, -1), 
+        (0, 1)   
     ]
     for dr, dc in moves:
         new_row = row + dr
