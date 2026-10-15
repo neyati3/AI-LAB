@@ -1,5 +1,8 @@
 import random
-N = 4
+N=int(input("Enter the no.of Queens "))
+if N < 1:
+    print("Please enter a positive number.")
+    exit()
 def heuristic(board):
     conflicts = 0
     for i in range(N):
